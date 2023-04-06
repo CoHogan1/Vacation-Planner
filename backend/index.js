@@ -4,9 +4,16 @@ const app = express()
 const PORT = 3000
 
 
-app.get('/test', (req, res) => {
-  res.send('Hello World!')
+app.get('/', (req, res) => {
+  res.send('home')
 })
+
+
+app.get('/one', (req, res) => {
+  res.send('one')
+})
+
+
 
 
 app.listen(PORT, ()=>{

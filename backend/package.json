@@ -31,8 +31,8 @@
     "encodeurl": "^1.0.2",
     "escape-html": "^1.0.3",
     "etag": "^1.8.1",
-    "express": "^4.18.2",
     "fill-range": "^7.0.1",
+    "express": "^4.18.2",
     "finalhandler": "^1.2.0",
     "forwarded": "^0.2.0",
     "fresh": "^0.5.2",
@@ -102,8 +102,8 @@
     "to-regex-range": "^5.0.1",
     "toidentifier": "^1.0.1",
     "touch": "^3.1.0",
-    "tr46": "^3.0.0",
     "type-is": "^1.6.18",
+    "tr46": "^3.0.0",
     "undefsafe": "^2.0.5",
     "unpipe": "^1.0.0",
     "utils-merge": "^1.0.1",
@@ -111,8 +111,10 @@
     "webidl-conversions": "^7.0.0",
     "whatwg-url": "^11.0.0"
   },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mongoose": "mongoose index.js"
   },
   "author": "",
   "license": "ISC"
