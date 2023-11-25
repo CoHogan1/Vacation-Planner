@@ -1,38 +1,203 @@
 .App {
   text-align: center;
+  padding: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* .form1{
+    border: 2px solid black;
+    background-color: grey;
+    display: grid;
+    margin: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form1 > input {
+    margin: 7px;
+    padding: 5px;
+    text-align: center;
+    font-style: italic;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form1 > input[type=submit]{
+    background: rgba(10,10,190, 0.5);
+    border-radius: 15px;
+
+} */
+
+.game {
+    border: 2px solid red;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url('marble.jpeg');
+    background-size: cover;
+    width: 100vw;
+    height:100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.cell {
+    height: 18px;
+    width: 18px;
+    margin: 0 2px 0 2px;
+    border: 2px solid black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.board {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    max-width: 450px;
+    border: 3px solid green;
+    margin: 50px auto;
+    min-height: 75px;
+    background-color: rgba(200,200,200, 0.7)
+}
+
+.board2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 1px;
+    border: 2px solid grey;
+    min-height: 75px;
+    max-width: 60%;
+    background-color: rgba(200,200,200, 0.2);
+    margin: 20px auto;
+}
+
+.square {
+    background-color: rgba(250,250,250, 0.3);
+    border: 2px solid silver;
+    height: 100px;
+    width: 100px;
+    padding: 3px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-column-gap: 1px; */
+    grid-row-gap: 1px;
+    margin: auto;
+}
+
+.squarex {
+    background-color: rgba(0,0,0, 0.7);
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    padding: 1.5px;
+    color: gold;
+}
+
+span{
+    width: 75px;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+span > p {
+    padding: 5px;
+}
+
+.squarey {
+    background-color: green;
+    height: 3px;
+    width: 3px;
+}
+
+
+/* .page {
+    background: cyan;
+    width: 100%;
+    height: 100vh;
+}
+
+.background {
+    height: 300px;
+    border: 4px solid black;
+    border-radius: 25px;
+}
+
+.title {
+    background-color: rgba(0,0,0, 0.5);
+    padding: 5px 0;
+
+}*/
+
+.text {
+    /* max-width: 500px; */
+    border: 3px solid black;
+    background-color:white;
+    min-height: 50px;
+    margin: auto;
+    border-radius: 20px;
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.text > p {
+    padding:2px;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+.guess {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(100,200,100, 0.3);
+    width: 60%;
+}
+
+.guessSelector {
+    border: 2px solid grey;
+    width: 20px;
+    color: gold;
+    box-shadow: 3px 3px 3px black;
+}
+
+.x {
+    background: white;
+    width: 70px;
+    height: 25px;
+}
+
+
+
+.card {
+    background-image: url('tree_background.jpeg');
+    background-size: cover;
+    width:95%;
+    min-height: 75vh;
+    margin: 20% auto;
+    border: 3px solid red;
+}
+
+.flashCard {
+    border-radius: 25px;
+    height: 300px;
+    width: 90%;
+    background-image: linear-gradient(teal, cyan, white, white, white, white);
+    margin: 20px auto;
+    transition: 1s ease-in;
+}
+
+.word {
+    margin: auto;
+    font-size: 2.5em;
+    line-height: 300px;
+}
+
+.nextButton {
+    background-color: lime;
+    position: absolute;
+    bottom: 35%;
+    left: 48%;
+
 }
